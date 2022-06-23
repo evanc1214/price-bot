@@ -65,6 +65,16 @@ async function monitorPrice() {
 
     // ADD YOUR CUSTOM TOKEN PAIRS HERE!!!
 
+
+
+    await checkPair({
+      inputTokenSymbol: 'ETH',
+      inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+      outputTokenSymbol: 'wBTC',
+      outputTokenAddress: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
+      inputAmount: web3.utils.toWei('1', 'ETHER')
+    })
+
     await checkPair({
       inputTokenSymbol: 'ETH',
       inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
